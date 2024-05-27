@@ -62,7 +62,7 @@ interface Astro {
   is_sun_up: number
 }
 
-interface HourlyForecast {
+export interface HourlyForecast {
   time_epoch: number
   time: string
   temp_c: number
@@ -129,6 +129,10 @@ export interface ForecastDay {
   day: DayForecast
   astro: Astro
   hour: HourlyForecast[]
+}
+
+export interface ForecastDayHour {
+  data: HourlyForecast[]
 }
 
 export interface Forecast {

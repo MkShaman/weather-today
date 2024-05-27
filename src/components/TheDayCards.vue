@@ -8,11 +8,9 @@
         :class="{ '': index === 0 }"
       >
         <div class="flex flex-col">
-          <div>
-            <h2 class="text-1xl text-center font-bold text-gray-600">
-              {{ index === 0 ? 'Today' : formattedDateDisplay(day.date) }}
-            </h2>
-          </div>
+          <h2 class="text-1xl text-center font-bold text-gray-600">
+            {{ index === 0 ? 'Today' : formattedDateDisplay(day.date) }}
+          </h2>
           <div class="my-6">
             <div class="flex flex-row items-center justify-center space-x-4">
               <div id="icon">
@@ -70,15 +68,28 @@
               </div>
             </div>
           </div>
+          <div class="mt-2 w-full place-items-end border-t-2 border-gray-100 text-right">
+            <a
+              href="#"
+              @click.prevent="hourData = day.hour"
+              class="text-base font-medium text-indigo-600"
+              >View more</a
+            >
+          </div>
         </div>
       </div>
     </div>
+    <TheHourCards v-if="hourData.length" :data="hourData" />
   </div>
 </template>
 <script setup lang="ts">
-import { Forecast } from '../interfaces/TheWeather'
+import { ref } from 'vue'
+import { Forecast, HourlyForecast } from '../interfaces/TheWeather'
+import TheHourCards from './TheHourCards.vue'
 
 defineProps<Partial<Forecast>>()
+
+const hourData = ref<HourlyForecast[]>([])
 
 function formattedDateDisplay(date: string) {
   const options: Intl.DateTimeFormatOptions = {
