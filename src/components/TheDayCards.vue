@@ -2,7 +2,7 @@
   <div class="w-full">
     <div class="flex h-full flex-wrap items-center justify-center gap-5">
       <div
-        class="rounded-2xl border-2 border-gray-50 bg-white p-6 shadow-2xl"
+        class="w-full rounded-2xl border-2 border-gray-50 bg-white p-6 shadow-2xl sm:w-auto"
         v-for="(day, index) in forecastday"
         :key="index"
         :class="{ '': index === 0 }"

@@ -3,7 +3,7 @@
     <div
       class="rounded-lg bg-white p-5 text-lg font-bold text-gray-800 shadow-md dark:text-gray-400"
     >
-      {{ country }}, {{ region }}, {{ name }}
+      {{ country }}, {{ name }}
     </div>
   </div>
 </template>

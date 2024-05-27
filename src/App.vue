@@ -14,15 +14,10 @@ function handleWeatherData(weatherData: ForecasttWeatherData | null) {
 
 <template>
   <div
-    class="flex h-screen flex-col items-center justify-center gap-4 bg-gradient-to-b from-black to-gray-600"
+    class="flex h-full min-h-screen flex-col items-center justify-start gap-4 bg-gradient-to-b from-black to-gray-600 p-5 pt-10 sm:justify-center sm:pt-5"
   >
     <TheForm @dataToParent="handleWeatherData" />
-    <TheLocation
-      v-if="data"
-      :name="data.location.name"
-      :region="data.location.region"
-      :country="data.location.country"
-    />
+    <TheLocation v-if="data" :name="data.location.name" :country="data.location.country" />
     <TheDayCards v-if="data" :forecastday="data.forecast.forecastday" />
   </div>
 </template>
