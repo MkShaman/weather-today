@@ -7,7 +7,7 @@
       >
         <img src="../assets/loader.svg" alt="" />
       </div>
-      <div class="flex items-center justify-center gap-2">
+      <div class="flex flex-col items-center justify-center gap-2 sm:flex-row">
         <div class="relative w-full">
           <input
             v-model="searchQuery"
@@ -34,7 +34,7 @@
         </div>
         <button
           @click="getForecastWeather()"
-          class="rounded-md bg-gray-900 px-4 py-2 text-white transition duration-200 hover:bg-gray-700"
+          class="w-full rounded-md bg-gray-900 px-4 py-2 text-white transition duration-200 hover:bg-gray-700 sm:w-auto"
         >
           Get
         </button>
