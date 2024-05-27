@@ -15,7 +15,7 @@ The Weather Today app is designed to provide up-to-date, real-time weather infor
 To get started with the project, add a **.env** file to the project root and add variables.
 
 ```sh
-VITE_APP_ROOT_API=<URL>
+VITE_APP_ROOT_API=https://api.weatherapi.com/v1/
 
 VITE_APP_ACCESS_KEY=<YOUR_API_KEY>
 
