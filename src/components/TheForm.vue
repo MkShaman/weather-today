@@ -5,7 +5,7 @@
         v-show="loading"
         class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-white bg-opacity-80"
       >
-        <img src="./assets/loader.svg" alt="" />
+        <img src="../assets/loader.svg" alt="" />
       </div>
       <div class="flex items-center justify-center gap-2">
         <div class="relative w-full">
