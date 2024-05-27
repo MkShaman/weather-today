@@ -81,7 +81,7 @@ import { Forecast } from '../interfaces/TheWeather'
 defineProps<Partial<Forecast>>()
 
 function formattedDateDisplay(date: string) {
-  const options = {
+  const options: Intl.DateTimeFormatOptions = {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
