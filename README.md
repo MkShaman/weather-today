@@ -1,4 +1,4 @@
-# Weather Today ([Live Demo](#))
+# Weather Today ([Live Demo](https://weather-today-3wza.onrender.com))
 
 ![Vue 3](https://img.shields.io/badge/-Vue%203-blue?style=flat-square&logo=vuedotjs)
 ![TypeScript](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
@@ -17,7 +17,7 @@ To get started with the project, add a **.env** file to the project root and add
 ```sh
 VITE_APP_ROOT_API=https://api.weatherapi.com/v1/
 
-VITE_APP_ACCESS_KEY=https://weather-today-3wza.onrender.com
+VITE_APP_ACCESS_KEY=<YOUR_API_KEY>
 
 ```
 
