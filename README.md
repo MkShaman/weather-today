@@ -17,7 +17,7 @@ To get started with the project, add a **.env** file to the project root and add
 ```sh
 VITE_APP_ROOT_API=https://api.weatherapi.com/v1/
 
-VITE_APP_ACCESS_KEY=<YOUR_API_KEY>
+VITE_APP_ACCESS_KEY=https://weather-today-3wza.onrender.com
 
 ```
 
